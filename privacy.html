@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy – LeC Content</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+           background: #f9f9f9; color: #111; line-height: 1.7; }
+    header { background: #000; color: #fff; padding: 20px 40px;
+             display: flex; align-items: center; gap: 14px; }
+    header span { font-size: 20px; font-weight: 700; letter-spacing: -0.3px; }
+    .container { max-width: 780px; margin: 48px auto; padding: 0 24px 80px; }
+    h1 { font-size: 32px; font-weight: 800; margin-bottom: 6px; }
+    .meta { color: #666; font-size: 14px; margin-bottom: 36px; }
+    h2 { font-size: 18px; font-weight: 700; margin: 32px 0 10px;
+         padding-left: 12px; border-left: 3px solid #fe2c55; }
+    p { color: #333; margin-bottom: 12px; }
+    table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+    th { background: #111; color: #fff; padding: 10px 14px; text-align: left; }
+    td { border: 1px solid #e0e0e0; padding: 10px 14px; vertical-align: top; }
+    tr:nth-child(even) td { background: #fafafa; }
+    a { color: #fe2c55; text-decoration: none; }
+    footer { text-align: center; padding: 24px; color: #999; font-size: 13px;
+             border-top: 1px solid #eee; }
+  </style>
+</head>
+<body>
+
+<header>
+  <span>⚡ LeC Content</span>
+</header>
+
+<div class="container">
+  <h1>Privacy Policy</h1>
+  <p class="meta">Last updated: June 5, 2025 &nbsp;·&nbsp; Effective immediately</p>
+
+  <h2>1. Overview</h2>
+  <p>LeC Content ("we", "our", "the Service") is an internal content automation tool developed by LeC Studio. This Privacy Policy explains how we collect, use, and protect information when you authorize our application to interact with your TikTok account via the official TikTok Content Posting API.</p>
+  <p>We are committed to protecting your privacy and handling your data responsibly.</p>
+
+  <h2>2. Information We Collect</h2>
+  <table>
+    <tr><th>Data Type</th><th>What We Collect</th><th>Why</th></tr>
+    <tr>
+      <td>OAuth Access Token</td>
+      <td>TikTok access token and refresh token</td>
+      <td>To authenticate API requests and publish video content on your behalf</td>
+    </tr>
+    <tr>
+      <td>User Identifier</td>
+      <td>TikTok Open ID (anonymous identifier)</td>
+      <td>To associate tokens with the correct TikTok account</td>
+    </tr>
+    <tr>
+      <td>Basic Profile Info</td>
+      <td>Display name, avatar URL (from TikTok API)</td>
+      <td>To confirm correct account identity during setup</td>
+    </tr>
+    <tr>
+      <td>Video Metadata</td>
+      <td>Video title, caption, privacy setting you provide</td>
+      <td>To correctly publish content via TikTok API</td>
+    </tr>
+  </table>
+  <p>We do <strong>not</strong> collect passwords, payment information, or any sensitive personal data.</p>
+
+  <h2>3. How We Use Your Information</h2>
+  <p>All collected data is used solely to:</p>
+  <p>• Authenticate with TikTok API on your behalf<br>
+     • Publish video content to your authorized TikTok account(s)<br>
+     • Refresh expired tokens automatically to maintain uninterrupted service<br>
+     • Send notifications about publishing status via Telegram (internal team only)</p>
+  <p>We do <strong>not</strong> sell, trade, or share your data with any third parties outside of TikTok's official API infrastructure.</p>
+
+  <h2>4. Data Storage</h2>
+  <p>OAuth tokens are stored <strong>locally</strong> on the authorized device in an encrypted JSON file (<code>assets/.tiktok/tokens.json</code>). Tokens are never transmitted to any external server operated by LeC Studio.</p>
+  <p>The only external communication is directly with TikTok's official API servers (<code>open.tiktokapis.com</code>).</p>
+
+  <h2>5. Data Retention</h2>
+  <p>Token data is retained only as long as the Service is in active use. You can delete all stored tokens at any time by removing the <code>assets/.tiktok/tokens.json</code> file from your device.</p>
+
+  <h2>6. Your Rights & Revoking Access</h2>
+  <p>You can revoke this application's access to your TikTok account at any time:</p>
+  <p>• Open TikTok app → <strong>Profile</strong> → <strong>Settings and privacy</strong><br>
+     → <strong>Security</strong> → <strong>Manage app permissions</strong><br>
+     → Find "LeC Content" → <strong>Revoke access</strong></p>
+  <p>Upon revocation, all stored tokens become invalid immediately.</p>
+
+  <h2>7. Third-Party Services</h2>
+  <p>This application integrates with:</p>
+  <p>• <strong>TikTok Content Posting API</strong> — subject to <a href="https://www.tiktok.com/legal/page/global/privacy-policy/en" target="_blank">TikTok's Privacy Policy</a><br>
+     • <strong>Facebook Graph API</strong> — for source content scanning, subject to <a href="https://www.facebook.com/privacy/policy/" target="_blank">Meta's Privacy Policy</a><br>
+     • <strong>Google Gemini API</strong> — for AI caption generation (text only, no personal data)</p>
+
+  <h2>8. Security</h2>
+  <p>All API communications use HTTPS encryption. Tokens are stored locally and never transmitted to third-party servers. Access to the tool is restricted to authorized LeC Studio personnel only.</p>
+
+  <h2>9. Children's Privacy</h2>
+  <p>This Service is not directed to children under 13. We do not knowingly collect personal information from children.</p>
+
+  <h2>10. Changes to This Policy</h2>
+  <p>We may update this Privacy Policy from time to time. The "Last updated" date at the top will reflect any changes. Continued use of the Service constitutes acceptance of the updated policy.</p>
+
+  <h2>11. Contact Us</h2>
+  <p>If you have questions about this Privacy Policy or how we handle your data, please contact:<br>
+     <strong>LeC Studio</strong><br>
+     Email: <a href="mailto:contact@lecstudio.vn">contact@lecstudio.vn</a></p>
+</div>
+
+<footer>© 2025 LeC Studio. All rights reserved. &nbsp;·&nbsp;
+  <a href="terms.html">Terms of Service</a>
+</footer>
+
+</body>
+</html>
